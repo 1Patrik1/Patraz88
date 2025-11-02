@@ -157,9 +157,7 @@ async function savePage(message) {
 		selectionFound = await ui.markSelection(options.optionallySelected);
 	}
 	if (!processing && (!bootstrap || !bootstrap.pageInfo.processing)) {
-		options.updatedResources = bootstrap ? bootstrap.pageInfo.updatedResources : {};
 		options.visitDate = bootstrap ? bootstrap.pageInfo.visitDate : new Date();
-		Object.keys(options.updatedResources).forEach(url => options.updatedResources[url].retrieved = false);
 		if (options.optionallySelected && selectionFound) {
 			options.selected = true;
 		}
@@ -356,6 +354,9 @@ async function processPage(options) {
 			console.log("SingleFile stats"); // eslint-disable-line no-console
 			console.table(page.stats); // eslint-disable-line no-console
 		}
+	}
+	if (options.delayAfterProcessing) {
+		await new Promise(resolve => setTimeout(resolve, options.delayAfterProcessing * 1000));
 	}
 	return page;
 }

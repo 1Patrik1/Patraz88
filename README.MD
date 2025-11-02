@@ -38,7 +38,7 @@ SingleFile can be installed from the store of:
 - Firefox for Android:
   https://addons.mozilla.org/android/addon/single-file
 - Chrome:
-  https://chrome.google.com/extensions/detail/mpiodijhokgodhhofbcjdecpffjipkle
+  https://chromewebstore.google.com/detail/singlefile/mpiodijhokgodhhofbcjdecpffjipkle
 - Safari (macOS and iOS): https://apps.apple.com/us/app/singlefile-for-safari/id6444322545
 - Microsoft Edge:
   https://microsoftedge.microsoft.com/addons/detail/efnbkdcfmcmnhlkaijjjmhjjgladedno
@@ -153,6 +153,9 @@ Footnotes:
 - linkding - Bookmark manager that you can host yourself. It's designed be to
   be minimal, fast, and easy to set up using Docker:
   https://github.com/sissbruecker/linkding
+- Linkwarden - Self-hosted collaborative bookmark manager to collect, read, 
+  annotate, and fully preserve what matters, all in one place:
+  https://github.com/linkwarden/linkwarden
 - obsidian-html-plugin - Plugin for reading HTML pages in Obsidian:
   https://github.com/nuthrash/obsidian-html-plugin
 - Org-Dex.el - Emacs package designed to enhance Org-mode by integrating 
@@ -165,6 +168,10 @@ Footnotes:
   note with SingleFile: https://github.com/nil0x42/singlefile2trilium
 - SingleFileMac - Integration of SingleFile in a swift application using
   webkit: https://github.com/david-littlefield/SingleFileMac
+- SingleFile MV3 CDP Patched - fork of SingleFile patched to allow programmatic 
+  control with Chrome DevTools Protocol: https://github.com/Cosmologist/SingleFile-MV3-CDP-Patched
+- SingleFile MCP - Model Context Protocol (MCP) server that provides intelligent web
+  content extraction using single-file and trafilatura: https://github.com/kwinsch/singlefile-mcp
 - Trilium-SingleFile - An addon for Trilium Notes to easily import SingleFile 
   html pages: https://github.com/rauenzi/Trilium-SingleFile
 - Trilium Simple SingleFile Renderer - A plugin to add a new Template note to
@@ -211,3 +218,6 @@ you are interested in licensing the SingleFile code for a commercial service or
 product.
 
 Suggestions are welcome :)
+
+
+
